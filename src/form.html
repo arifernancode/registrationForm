@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Form Example</title>
     </head>
     <body>
-        
+        <!--first, last, birthday, gender, email-->
+        <div id="inputs">
+
+            <h1 class="large bolder">Register Form</h1>
+
+            <input name="registerInput"type="text"id="firstName" placeholder="First Name...">
+            <input name="registerInput"type="text"id="middleName" placeholder="Middle Name...">
+            <input name="registerInput"type="text"id="lastName" placeholder="Last Name...">
+            <br><br>
+            <input name="registerInput"type="date"id="birthday" placeholder="Birthday...">
+            <br><br>
+            
+            <select name="gender" id="genderSelection">
+                <option disabled>Choose Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option selected>Other</option>
+            </select>
+
+            <br><br>
+
+            <input name="registerInput"id="email"type="email"placeholder="Email...">
+        </div>
+        <br>
+        <button id="submitButton" onclick="submit()">Submit</button>
+        <button id="resetButton" onclick="reset()">Reset</button>
+        <script src="script.js"></script>
     </body>
 </html>
